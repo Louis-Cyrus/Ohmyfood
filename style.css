@@ -299,6 +299,7 @@ header__arrow {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(-50%);
   font-size: 1.2rem;
   color: black;
 }
@@ -410,6 +411,10 @@ header__arrow {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
   max-width: 100%;
 }
 .menuItem__header {
@@ -444,6 +449,7 @@ header__arrow {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 0.5s;
 }
 .menuItem__icon {
   color: #9356DC;

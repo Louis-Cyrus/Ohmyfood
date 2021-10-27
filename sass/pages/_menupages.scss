@@ -12,6 +12,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        transform: translateY(-50%);
         font-size: 1.2rem;
         color: black;
     }
@@ -137,6 +138,10 @@ header {
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
     max-width: 100%;
 
     &__header {
@@ -175,6 +180,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        transition-duration: 0.5s;
     }
 
     &__icon {
