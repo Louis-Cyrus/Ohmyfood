@@ -207,6 +207,12 @@ header {
     }
 }
 
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+        animation-delay: #{$i/10}s;
+    }
+}
+
 .contentBtn {
     display: flex;
     text-decoration: none;
